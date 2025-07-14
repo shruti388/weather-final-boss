@@ -102,7 +102,8 @@
             document.getElementById("weather").innerHTML =
               "<strong>City:</strong> " + data.name + "<br>" +
               "<strong>Temp:</strong> " + data.main.temp + " °C<br>" +
-              "<strong>Weather:</strong> " + data.weather[0].description + "<br>";
+              "<strong>Weather:</strong> " + data.weather[0].description + "<br>"+
+              "<img src='icon.jpg' alt='Weather Icon' width='60' class='weather-icon'>";
           } else {
             document.getElementById("weather").innerHTML =
               "<span style='font-size: 22px; font-weight: bold;'>City not found!</span>";
